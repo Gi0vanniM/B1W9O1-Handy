@@ -82,7 +82,7 @@ nav ul a svg {
 
 /*  */
 
-.container {
+.banners .container {
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -90,7 +90,7 @@ nav ul a svg {
     height: 220px;
 }
 
-.container img {
+.banners .container img {
     display: block;
     width: 300px;
     height: 220px;
@@ -109,20 +109,71 @@ nav ul a svg {
     background-color: rgba(34,41,49,0.8);
 }
 
-.banner1:hover .overlay, .banner2:hover .overlay, .banner3:hover .overlay {
+.banners .banner1:hover .overlay, .banner2:hover .overlay, .banner3:hover .overlay {
     opacity: 1;
   }
 
-.container .overlay .text {
+.banners .container .overlay .text {
     font-size: 32px;
     position: absolute;
     font-weight: 600;
-    width: 100%;
-    height: 100%;
-    /* top: 50%; */
-    /* left: 50%; */
+    /* width: 100%;
+    height: 100%; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #ffffff;
     opacity: 1;
     text-align: center;
+}
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+.ribbon {
+    position: absolute;
+    left: 0;
+    margin-top: 60px;
+    background-color: #ffe718;
+    width: 100%;
+    height: 140px;
+
+    display: flex;
+    align-items: center;
     justify-content: center;
+}
+
+.ribbon .text {
+    color: #222931;
+    margin: auto;
+    width: 1000px;
+}
+
+.ribbon #groot {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.ribbon #klein {
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 12px;
+}
+
+.ribbon #knop {
+    font-size: 12px;
+    font-weight: 500;
+    float: right;
+    border: none;
+    color: #222931;
+    height: 40px;
+    width: 200px;
+}
+
+.banners2 {
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: auto auto auto;
+    margin-top: 430px;
 }
