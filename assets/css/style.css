@@ -30,9 +30,13 @@ nav {
 
 nav ul {
     /* list-style-type: none; */
-    float: left;
+    width: 43%;
+    /* float: left; */
     padding-left: 35px;
-    vertical-align: center;
+    /* vertical-align: center; */
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: auto auto auto auto auto;
 }
 
 nav ul a {
@@ -40,6 +44,16 @@ nav ul a {
     color: white;
     font-weight: bold;
     text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul a:hover {
+    background-color: #ffe718;
+    color: #222931;
 }
 
 nav ul a svg {
@@ -169,6 +183,21 @@ nav ul a svg {
     color: #222931;
     height: 40px;
     width: 200px;
+    background: #ffffff;
+}
+
+.ribbon #knop:hover {
+    color: #ffffff;
+    background: #222931;
+    cursor: pointer;
+}
+
+.fr_img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin-top: 260px;
+    z-index: -1;
 }
 
 .banners2 {
@@ -176,4 +205,82 @@ nav ul a svg {
     grid-template-rows: 100px;
     grid-template-columns: auto auto auto;
     margin-top: 430px;
+}
+
+.banners2 .block {
+    width: 300px;
+    height: 100px;
+    background-color: #ffe718;
+    color: #222931;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banners2 .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banners2 .icon, .banners2 .text {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.banners2 .text {
+    margin-left: 25px;
+}
+
+.banners2 svg {
+    height: 64px;
+    width: 64px;
+    fill: #222931;
+}
+
+.banners2 .groot {
+    font-size: 22px;
+    font-weight: 600;
+    width: auto;
+}
+
+.banners2 .klein {
+    font-size: 14px;
+    font-weight: 600;
+    width: auto;
+}
+
+.banners2 .banner2 .block:hover {
+    color: #ffffff;
+    background-color: #222931;
+}
+
+footer hr{
+    margin-top: 60px;
+}
+
+#footer_text {
+
+}
+
+#overons {
+    float: left;
+    width: 50%;
+}
+
+#overons h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#overons p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#contact {
+float: right;
 }
