@@ -263,24 +263,83 @@ footer hr{
 }
 
 #footer_text {
-
+    display: grid;
+    /* grid-template-rows: 100px; */
+    grid-template-columns: auto  316px;
 }
 
 #overons {
+    width: 63%;
     float: left;
-    width: 50%;
 }
 
-#overons h1 {
+#overons h1, #contact h1 {
     font-size: 24px;
     font-weight: 600;
 }
 
-#overons p {
+#overons p, #contact p {
     font-size: 12px;
     font-weight: 400;
+    color: #5f656d;
+}
+
+#contact p svg {
+    /* height: 20px; */
+    width: 20px;
+    margin-right: 10px;
+    color: #aeb6be;
+}
+
+#contact p {
+    display: flex;
+    align-items: center;
 }
 
 #contact {
 float: right;
 }
+
+footer #footer_bar {
+    position: absolute;
+    width: 100%;
+    background-color: #222931;
+    left: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+footer #footer_bar p{
+    color: #ffffff;
+    width: 1000px;
+    margin: auto;
+    float: right;
+    text-align: right;
+}
+
+.text_diensten {
+    align-items: center;
+    margin-top: 50%;
+}
+
+ul.breadcrumb {
+    padding: 0;
+    list-style: none;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #5f656d;
+    content: ">\00a0";
+  }
+  ul.breadcrumb li a {
+    color: #5f656d;
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    text-decoration: underline;
+  }
